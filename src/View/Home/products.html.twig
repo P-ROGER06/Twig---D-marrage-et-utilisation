@@ -3,7 +3,7 @@
 {% block content %}
     {% for product in products %}
         {{ product }}
-        {% if loop.products == 3 %}
+        {% if loop.index == 3 %}
         <br>
         {% endif %}
         {% endfor %}
